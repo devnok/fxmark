@@ -14,10 +14,10 @@
 # SMT_LEVEL = 1
 # NUM_TEST_CONF = 138
 
-set term pdfcairo size 6.8999999999999995in,16.099999999999998in font ',10'
+set term pdfcairo size 6.8999999999999995in,29.9in font ',10'
 set_out='set output "`if test -z $OUT; then echo sc.pdf; else echo $OUT; fi`"'
 eval set_out
-set multiplot layout 7,3
+set multiplot layout 13,3
 
 set title 'nvme:DRBH:bufferedio'
 set xlabel '# cores'
